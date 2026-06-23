@@ -40,15 +40,15 @@ export default function Nav() {
           </div>
         </Link>
 
-        <nav aria-label="Hauptnavigation" className="hidden md:flex items-center gap-7">
+        <nav aria-label="Hauptnavigation" className="hidden md:flex items-center gap-1">
           {navItems.map(({ label, href }) => (
             <Link
               key={label}
               href={href}
-              className={`text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm ${
+              className={`text-sm px-3 py-1.5 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 ${
                 pathname === href
-                  ? "text-text-primary font-medium"
-                  : "text-text-secondary hover:text-text-primary"
+                  ? "bg-brand-light text-brand font-medium"
+                  : "text-text-secondary hover:text-text-primary hover:bg-bg-secondary"
               }`}
             >
               {label}
