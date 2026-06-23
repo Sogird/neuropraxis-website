@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts: DM Serif Display for headings, DM Sans for body */
+  --font-display: var(--font-dm-serif), ui-serif, serif;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui;
+
+  /* Brand: forest green */
+  --color-brand: oklch(0.40 0.12 152);
+  --color-brand-hover: oklch(0.35 0.12 152);
+  --color-brand-active: oklch(0.30 0.12 152);
+  --color-brand-light: oklch(0.94 0.03 152);
+  --color-brand-dark: oklch(0.26 0.09 152);
+
+  /* Backgrounds */
+  --color-bg-primary: oklch(0.99 0.003 152);
+  --color-bg-secondary: oklch(0.97 0.005 152);
+  --color-bg-tertiary: oklch(0.93 0.007 152);
+  --color-bg-dark: oklch(0.24 0.08 152);
+
+  /* Text */
+  --color-text-primary: oklch(0.15 0.015 152);
+  --color-text-secondary: oklch(0.46 0.015 152);
+  --color-text-muted: oklch(0.66 0.010 152);
+
+  /* Borders */
+  --color-border-subtle: oklch(0.91 0.005 152);
+  --color-border-strong: oklch(0.80 0.010 152);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
