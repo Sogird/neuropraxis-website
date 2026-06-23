@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 const doctors = [
   {
@@ -63,7 +64,16 @@ export default function Team() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="space-y-4">
+            <div className="relative h-48 rounded-lg overflow-hidden">
+              <Image
+                src="/images/team2019kl.jpg"
+                alt="Das Ärzteteam der Neuropraxis an der Ihme"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {doctors.map((doc) => (
               <div
                 key={doc.initials}
@@ -80,6 +90,7 @@ export default function Team() {
                 </p>
               </div>
             ))}
+            </div>
           </div>
         </div>
       </div>

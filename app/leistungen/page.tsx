@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import PageHeader from "@/components/PageHeader"
 
 export const metadata: Metadata = {
@@ -40,13 +41,13 @@ const zusatz = [
 ]
 
 const methoden = [
-  { kuerzel: "EEG", name: "Elektroenzephalographie" },
-  { kuerzel: "ENG", name: "Elektroneurographie" },
-  { kuerzel: "EMG", name: "Elektromyographie" },
-  { kuerzel: "Doppler", name: "Dopplersonographie und Duplexsonographie der hirnversorgenden Gefäße" },
-  { kuerzel: "Demenz", name: "Demenztestung" },
-  { kuerzel: "LP", name: "Liquorpunktion (Nervenwasseruntersuchung)" },
-  { kuerzel: "Labor", name: "Labordiagnostik" },
+  { kuerzel: "EEG", name: "Elektroenzephalographie", img: "/images/EEG-01.jpeg" },
+  { kuerzel: "ENG", name: "Elektroneurographie", img: null },
+  { kuerzel: "EMG", name: "Elektromyographie", img: "/images/EMG-02.jpeg" },
+  { kuerzel: "Doppler", name: "Dopplersonographie und Duplexsonographie der hirnversorgenden Gefäße", img: "/images/sono-02.jpg" },
+  { kuerzel: "Demenz", name: "Demenztestung", img: null },
+  { kuerzel: "LP", name: "Liquorpunktion (Nervenwasseruntersuchung)", img: null },
+  { kuerzel: "Labor", name: "Labordiagnostik", img: null },
 ]
 
 export default function LeistungenPage() {
@@ -123,6 +124,13 @@ export default function LeistungenPage() {
             <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
               Untersuchungsmethoden
             </p>
+            <div className="flex gap-2 mb-5">
+              {["/images/EEG-01.jpeg", "/images/EMG-02.jpeg", "/images/sono-02.jpg"].map((src, i) => (
+                <div key={i} className="relative flex-1 h-24 rounded-md overflow-hidden">
+                  <Image src={src} alt="" fill className="object-cover" aria-hidden="true" />
+                </div>
+              ))}
+            </div>
             <div className="space-y-3">
               {methoden.map((m) => (
                 <div key={m.kuerzel} className="flex items-start gap-4 py-3 border-b border-border-subtle last:border-0">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import PageHeader from "@/components/PageHeader"
 
 export const metadata: Metadata = {
@@ -53,8 +54,8 @@ const memberships = [
 ]
 
 const cooperations = [
-  { name: "NeuroConcept", description: "Neurologische Praxis" },
-  { name: "diesportstrategen", description: "Orthopädie und Unfallchirurgie" },
+  { name: "NeuroConcept", description: "Neurologische Praxis", logo: "/images/Logo-DiePraxis-Neuroconcept.png" },
+  { name: "diesportstrategen", description: "Orthopädie und Unfallchirurgie", logo: "/images/PRAXIS-diesportstrategen.png" },
 ]
 
 export default function PraxisPage() {
@@ -76,21 +77,31 @@ export default function PraxisPage() {
               Seit vielen Jahren in Linden
             </h2>
           </div>
-          <div className="text-text-secondary leading-relaxed text-[15px] space-y-4 max-w-2xl">
-            <p>
-              Unsere neurologisch-psychiatrische Gemeinschaftspraxis ist seit
-              vielen Jahren am Standort Linden verwurzelt. Nach vielen Jahren in
-              der Deisterstraße 13 begrüßen wir Sie nun in unseren neuen und
-              modernen Räumen in der Ricklinger Straße 5B.
-            </p>
-            <p>
-              Neben einer eingehenden Anamnese gehören moderne
-              Diagnostikverfahren und eine individuell abgestimmte Therapie zu
-              unserem Leistungsumfang. Uns ist es wichtig, Patientinnen und
-              Patienten sowie deren Angehörige umfassend zu informieren und
-              aufzuklären. Ein ganzheitlicher Ansatz, der Körper, Seele und
-              soziales Umfeld einbezieht, leitet uns dabei.
-            </p>
+          <div className="space-y-6 max-w-2xl">
+            <div className="relative h-56 rounded-xl overflow-hidden">
+              <Image
+                src="/images/Praxis-003.jpg"
+                alt="Praxisräume der Neuropraxis an der Ihme"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="text-text-secondary leading-relaxed text-[15px] space-y-4">
+              <p>
+                Unsere neurologisch-psychiatrische Gemeinschaftspraxis ist seit
+                vielen Jahren am Standort Linden verwurzelt. Nach vielen Jahren in
+                der Deisterstraße 13 begrüßen wir Sie nun in unseren neuen und
+                modernen Räumen in der Ricklinger Straße 5B.
+              </p>
+              <p>
+                Neben einer eingehenden Anamnese gehören moderne
+                Diagnostikverfahren und eine individuell abgestimmte Therapie zu
+                unserem Leistungsumfang. Uns ist es wichtig, Patientinnen und
+                Patienten sowie deren Angehörige umfassend zu informieren und
+                aufzuklären. Ein ganzheitlicher Ansatz, der Körper, Seele und
+                soziales Umfeld einbezieht, leitet uns dabei.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -144,9 +155,19 @@ export default function PraxisPage() {
             </p>
             <div className="space-y-4">
               {cooperations.map((c) => (
-                <div key={c.name} className="border-l-2 border-brand-light pl-4">
-                  <p className="text-sm font-medium text-text-primary">{c.name}</p>
-                  <p className="text-xs text-text-muted mt-0.5">{c.description}</p>
+                <div key={c.name} className="flex items-center gap-4 border border-border-subtle rounded-lg p-4">
+                  <div className="relative w-20 h-10 shrink-0">
+                    <Image
+                      src={c.logo}
+                      alt={c.name}
+                      fill
+                      className="object-contain object-left"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-text-primary">{c.name}</p>
+                    <p className="text-xs text-text-muted mt-0.5">{c.description}</p>
+                  </div>
                 </div>
               ))}
             </div>

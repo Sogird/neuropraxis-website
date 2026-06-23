@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Hero() {
   return (
     <section
@@ -50,7 +52,18 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="bg-bg-dark rounded-xl p-8 text-white">
+      <div className="flex flex-col gap-4">
+        <div className="relative h-52 lg:h-44 xl:h-52 rounded-xl overflow-hidden">
+          <Image
+            src="/images/Praxis-01.jpeg"
+            alt="Empfang und Wartebereich der Neuropraxis an der Ihme"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        <div className="bg-bg-dark rounded-xl p-8 text-white">
         <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-white/65 mb-7">
           So finden Sie uns
         </p>
@@ -96,6 +109,7 @@ export default function Hero() {
               <p>Mo, Di, Do: 14–16 Uhr</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

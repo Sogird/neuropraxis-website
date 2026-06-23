@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 const navItems = [
@@ -21,11 +22,14 @@ export default function Nav() {
           className="flex items-center gap-3 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm"
           aria-label="Neuropraxis an der Ihme – Startseite"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="0" y="0" width="10" height="10" rx="2" fill="oklch(0.40 0.12 152)" />
-            <rect x="13" y="0" width="10" height="10" rx="2" fill="oklch(0.26 0.09 152)" />
-            <rect x="6.5" y="13" width="10" height="10" rx="2" fill="oklch(0.26 0.09 152)" />
-          </svg>
+          <Image
+            src="/images/logo-gr.png"
+            alt=""
+            width={32}
+            height={32}
+            className="object-contain"
+            aria-hidden="true"
+          />
           <div>
             <p className="font-display text-[15px] leading-tight text-text-primary">
               Neuropraxis an der Ihme
