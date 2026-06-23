@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-3">
           <a
-            href="#kontakt"
+            href="/sprechzeiten"
             className="inline-flex items-center justify-center bg-brand text-white text-sm px-6 py-3 rounded-md hover:bg-brand-hover active:bg-brand-active transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 font-medium"
           >
             Termin anfragen
@@ -80,11 +80,21 @@ export default function Hero() {
 
           <div>
             <p className="text-xs text-white/70 mb-2">Sprechzeiten</p>
-            <p className="text-sm text-white/90 leading-relaxed">
-              Mo–Fr 8:00–13:00 Uhr<br />
-              Mo/Di/Do 14:00–17:00 Uhr<br />
-              <span className="text-white/65 text-xs mt-1 block">Termine nach Vereinbarung</span>
-            </p>
+            <div className="text-sm text-white/90 space-y-1">
+              <p>Mo, Di, Do: 09–16 Uhr</p>
+              <p>Mi, Fr: 09–13 Uhr</p>
+              <p className="text-white/65 text-xs pt-1">und nach Vereinbarung</p>
+            </div>
+          </div>
+
+          <div className="w-10 h-px bg-white/15" />
+
+          <div>
+            <p className="text-xs text-white/70 mb-2">Telefonisch erreichbar</p>
+            <div className="text-sm text-white/90 space-y-1">
+              <p>Mo–Fr: 09–12 Uhr</p>
+              <p>Mo, Di, Do: 14–16 Uhr</p>
+            </div>
           </div>
         </div>
       </div>

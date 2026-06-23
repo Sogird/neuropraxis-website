@@ -1,38 +1,40 @@
+import Link from "next/link"
+
 const doctors = [
   {
     initials: "CK",
-    name: "Dr. C. Klemm",
+    name: "Dr. med. Claudia Klemm",
     specialty: "Fachärztin für Neurologie",
   },
   {
     initials: "MB",
-    name: "Dr. M. Brünner",
-    specialty: "Neurologie, Psychiatrie & Psychotherapie",
+    name: "Dr. med. Manfred Brünner",
+    specialty: "Facharzt für Neurologie, Psychiatrie und Psychotherapie",
   },
   {
     initials: "SS",
-    name: "Dr. S. Siggelkow",
+    name: "Dr. med. Sabine Siggelkow",
     specialty: "Fachärztin für Neurologie",
   },
   {
     initials: "MG",
-    name: "Dr. M. Gottschalk",
-    specialty: "Neurologie & Nervenheilkunde",
+    name: "Dr. med. Mehri Gottschalk",
+    specialty: "Fachärztin für Neurologie und Nervenheilkunde",
   },
   {
     initials: "SM",
-    name: "Dr. St. Mohr",
-    specialty: "Psychiatrie, Psychotherapie & Neurologie",
+    name: "Dr. med. Stefan Mohr",
+    specialty: "Facharzt für Psychiatrie, Psychotherapie und Neurologie",
   },
   {
     initials: "KU",
-    name: "Dr. K. Urbanski",
-    specialty: "Psychiatrie & Psychotherapie",
+    name: "Dr. Katharina Urbanski",
+    specialty: "Fachärztin für Psychiatrie und Psychotherapie",
   },
   {
     initials: "TS",
-    name: "T. Saul",
-    specialty: "Psychiatrie & Psychotherapie",
+    name: "Tamara Saul",
+    specialty: "Fachärztin für Psychiatrie und Psychotherapie",
   },
 ]
 
@@ -48,12 +50,17 @@ export default function Team() {
             <h2 className="font-display text-3xl text-text-primary mb-5">
               Sieben Fachärztinnen und Fachärzte für Ihre Gesundheit
             </h2>
-            <p className="text-text-secondary leading-relaxed text-sm">
+            <p className="text-text-secondary leading-relaxed text-sm mb-6">
               Unsere neurologisch-psychiatrische Gemeinschaftspraxis vereint
               breite Fachkompetenz unter einem Dach. Jede Patientin und jeder
-              Patient wird individuell begleitet. Wir nehmen uns die Zeit für
-              ein gründliches Gespräch.
+              Patient wird individuell begleitet.
             </p>
+            <Link
+              href="/praxis"
+              className="text-sm text-brand hover:text-brand-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm"
+            >
+              Alle Informationen zum Team →
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
