@@ -35,6 +35,7 @@ export default function AnfahrtPage() {
             src="https://www.openstreetmap.org/export/embed.html?bbox=9.688%2C52.357%2C9.716%2C52.375&layer=mapnik&marker=52.3665%2C9.7028"
             className="w-full h-full border-0"
             loading="lazy"
+            sandbox="allow-scripts allow-same-origin"
           />
         </div>
         <p className="text-xs text-text-muted mt-2 text-right">
@@ -101,7 +102,7 @@ export default function AnfahrtPage() {
 
           <div className="space-y-5">
             <div className="bg-bg-dark rounded-lg p-6 text-white">
-              <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-white/65 mb-5">
+              <p className="text-xs font-medium tracking-[0.14em] uppercase text-white/65 mb-5">
                 Praxisadresse
               </p>
               <address className="not-italic font-display text-xl text-white leading-snug mb-1">
@@ -110,7 +111,7 @@ export default function AnfahrtPage() {
               </address>
               <p className="text-xs text-white/55 mb-6">Hannover-Linden</p>
               <a
-                href="https://www.openstreetmap.org/?mlat=52.3614&mlon=9.7095#map=17/52.3614/9.7095"
+                href="https://www.openstreetmap.org/?mlat=52.3665&mlon=9.7028#map=17/52.3665/9.7028"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-text-primary text-sm px-4 py-2 rounded hover:bg-white/90 transition-colors font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-dark"

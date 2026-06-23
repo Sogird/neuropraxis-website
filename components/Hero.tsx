@@ -30,7 +30,7 @@ export default function Hero() {
           </a>
           <a
             href="tel:051184300090"
-            className="inline-flex items-center justify-center border border-border-strong text-text-primary text-sm px-6 py-3 rounded-md hover:bg-bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-strong focus-visible:ring-offset-2"
+            className="inline-flex items-center justify-center border border-border-strong text-text-primary text-sm px-6 py-3 rounded-md hover:bg-bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
           >
             0511 8430090
           </a>

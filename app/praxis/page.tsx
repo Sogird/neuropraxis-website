@@ -64,7 +64,7 @@ export default function PraxisPage() {
       <PageHeader
         eyebrow="Unsere Praxis"
         title="Kompetenz, die sich auf sieben Schultern verteilt"
-        description="Ein freundliches und kompetentes Team erwartet Sie in unseren neuen und modernen Räumen in Hannover-Linden."
+        description="Sieben Fachärztinnen und Fachärzte für Neurologie und Psychiatrie — seit mehr als einem Jahrzehnt in Hannover-Linden."
       />
 
       <section className="max-w-6xl mx-auto px-6 py-16">
@@ -88,10 +88,11 @@ export default function PraxisPage() {
             </div>
             <div className="text-text-secondary leading-relaxed text-[15px] space-y-4">
               <p>
-                Unsere neurologisch-psychiatrische Gemeinschaftspraxis ist seit
-                vielen Jahren am Standort Linden verwurzelt. Nach vielen Jahren in
-                der Deisterstraße 13 begrüßen wir Sie nun in unseren neuen und
-                modernen Räumen in der Ricklinger Straße 5B.
+                Unsere neurologisch-psychiatrische Gemeinschaftspraxis begleitet
+                Patientinnen und Patienten in Hannover-Linden seit mehr als einem
+                Jahrzehnt. Nach langen Jahren in der Deisterstraße 13 begrüßen
+                wir Sie nun in unseren neuen und modernen Räumen in der
+                Ricklinger Straße 5B.
               </p>
               <p>
                 Neben einer eingehenden Anamnese gehören moderne
@@ -106,9 +107,9 @@ export default function PraxisPage() {
         </div>
 
         <div className="border-t border-border-subtle pt-16">
-          <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-10">
+          <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-10">
             Ärzteteam
-          </p>
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {doctors.map((doc) => (
               <div
@@ -136,9 +137,9 @@ export default function PraxisPage() {
 
         <div className="border-t border-border-subtle pt-16 mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+            <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
               Mitgliedschaften
-            </p>
+            </h2>
             <ul className="space-y-3">
               {memberships.map((m) => (
                 <li key={m} className="flex items-start gap-3 text-sm text-text-secondary">
@@ -150,9 +151,9 @@ export default function PraxisPage() {
           </div>
 
           <div>
-            <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+            <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
               Kooperationen
-            </p>
+            </h2>
             <div className="space-y-4">
               {cooperations.map((c) => (
                 <div key={c.name} className="flex items-center gap-4 border border-border-subtle rounded-lg p-4">
@@ -175,9 +176,9 @@ export default function PraxisPage() {
         </div>
 
         <div className="border-t border-border-subtle pt-16 mt-16">
-          <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+          <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
             Jobs
-          </p>
+          </h2>
           <div className="bg-bg-secondary rounded-xl p-8 max-w-2xl">
             <h3 className="font-display text-xl text-text-primary mb-4">
               MFA / Ausbildung 2026

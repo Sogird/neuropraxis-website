@@ -32,8 +32,14 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${dmSerif.variable} ${dmSans.variable}`}>
       <body className="bg-bg-primary text-text-primary antialiased font-sans">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-brand focus:text-white focus:rounded focus:text-sm focus:font-medium focus:no-underline"
+        >
+          Zum Inhalt springen
+        </a>
         <Nav />
-        {children}
+        <div id="main-content">{children}</div>
         <Footer />
       </body>
     </html>

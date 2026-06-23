@@ -50,9 +50,9 @@ export default function Services() {
     <section className="border-t border-border-subtle">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="flex items-baseline justify-between mb-10">
-          <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand">
+          <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand">
             Behandlungsspektrum
-          </p>
+          </h2>
           <Link
             href="/leistungen"
             className="text-xs text-text-muted hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm"

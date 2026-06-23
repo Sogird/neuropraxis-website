@@ -60,12 +60,13 @@ export default function LeistungenPage() {
       />
 
       <div className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+        <h2 className="sr-only">Fachgebiete</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="bg-brand text-white rounded-xl p-9">
-            <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-white/65 mb-5">
+            <p className="text-xs font-medium tracking-[0.14em] uppercase text-white/65 mb-5">
               Fachgebiet
             </p>
-            <h2 className="font-display text-2xl mb-4">Neurologie</h2>
+            <h3 className="font-display text-2xl mb-4">Neurologie</h3>
             <p className="text-sm text-white/75 leading-relaxed mb-7">
               Die Neurologie befasst sich mit Krankheiten des Gehirns, des
               Rückenmarks, der peripheren Nerven und der Muskulatur. Wir
@@ -82,17 +83,17 @@ export default function LeistungenPage() {
           </div>
 
           <div className="bg-bg-secondary rounded-xl p-9">
-            <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-brand mb-5">
+            <p className="text-xs font-medium tracking-[0.14em] uppercase text-brand mb-5">
               Fachgebiet
             </p>
-            <h2 className="font-display text-2xl text-text-primary mb-4">
+            <h3 className="font-display text-2xl text-text-primary mb-4">
               Psychiatrie & Psychotherapie
-            </h2>
+            </h3>
             <p className="text-sm text-text-secondary leading-relaxed mb-7">
               Im psychiatrischen Fachgebiet beschäftigen wir uns mit der
               Diagnostik, Therapie und Prävention seelischer Erkrankungen.
-              Ein ganzheitlicher Ansatz, der Körper, Seele und soziales
-              Umfeld einbezieht, leitet uns dabei.
+              Wir begleiten und koordinieren: von der Erstdiagnose bis zur
+              ambulanten Langzeitbetreuung.
             </p>
             <ul className="space-y-2.5">
               {psychiatrie.map((item) => (
@@ -107,9 +108,9 @@ export default function LeistungenPage() {
 
         <div className="border-t border-border-subtle pt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+            <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
               Zusatzleistungen
-            </p>
+            </h2>
             <ul className="space-y-4">
               {zusatz.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-text-secondary leading-relaxed">
@@ -121,9 +122,9 @@ export default function LeistungenPage() {
           </div>
 
           <div>
-            <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+            <h2 className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
               Untersuchungsmethoden
-            </p>
+            </h2>
             <div className="flex gap-2 mb-5">
               {["/images/EEG-01.jpeg", "/images/EMG-02.jpeg", "/images/sono-02.jpg"].map((src, i) => (
                 <div key={i} className="relative flex-1 h-24 rounded-md overflow-hidden">

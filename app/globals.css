@@ -21,7 +21,7 @@
   /* Text */
   --color-text-primary: oklch(0.14 0.012 168);
   --color-text-secondary: oklch(0.44 0.012 168);
-  --color-text-muted: oklch(0.50 0.010 168);
+  --color-text-muted: oklch(0.42 0.010 168);
 
   /* Borders: slightly more defined */
   --color-border-subtle: oklch(0.89 0.005 168);

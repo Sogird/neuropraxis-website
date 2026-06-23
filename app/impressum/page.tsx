@@ -27,14 +27,14 @@ export default function ImpressumPage() {
               <p>30449 Hannover</p>
               <p className="pt-2">
                 Telefon:{" "}
-                <a href="tel:051184300090" className="text-text-primary hover:text-brand transition-colors">
+                <a href="tel:051184300090" className="text-text-primary hover:text-brand transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm">
                   0511 8430090
                 </a>
               </p>
               <p>Telefax: 0511 84300999</p>
               <p>
                 E-Mail:{" "}
-                <a href="mailto:info@neuropraxis-hannover.eu" className="text-text-primary hover:text-brand transition-colors">
+                <a href="mailto:info@neuropraxis-hannover.eu" className="text-text-primary hover:text-brand transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm">
                   info@neuropraxis-hannover.eu
                 </a>
               </p>
@@ -115,7 +115,7 @@ export default function ImpressumPage() {
               </p>
               <a
                 href="mailto:datenschutz@neuropraxis-hannover.eu"
-                className="text-text-primary hover:text-brand transition-colors"
+                className="text-text-primary hover:text-brand transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm"
               >
                 datenschutz@neuropraxis-hannover.eu
               </a>
