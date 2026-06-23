@@ -27,78 +27,100 @@ export default function AnfahrtPage() {
         description="Wir empfehlen die Anfahrt mit öffentlichen Verkehrsmitteln. Die Praxis befindet sich im Stadtteil Hannover-Linden."
       />
 
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      {/* Map */}
+      <div className="max-w-6xl mx-auto px-6 pt-10">
+        <div className="relative overflow-hidden rounded-lg border border-border-subtle h-72 md:h-[420px]">
+          <iframe
+            title="Standort Neuropraxis an der Ihme"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=9.695%2C52.357%2C9.722%2C52.366&layer=mapnik&marker=52.3614%2C9.7095"
+            className="w-full h-full border-0"
+            loading="lazy"
+          />
+        </div>
+        <p className="text-xs text-text-muted mt-2 text-right">
+          Karte:{" "}
+          <a
+            href="https://www.openstreetmap.org/?mlat=52.3614&mlon=9.7095#map=16/52.3614/9.7095"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-text-secondary transition-colors"
+          >
+            OpenStreetMap
+          </a>
+        </p>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2 space-y-12">
+          <div className="lg:col-span-2 space-y-10">
             <div>
-              <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+              <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-5">
                 Mit öffentlichen Verkehrsmitteln
               </p>
-              <div className="space-y-4">
+              <div className="divide-y divide-border-subtle border border-border-subtle rounded-lg overflow-hidden">
                 {oeffentlich.map((h) => (
                   <div
                     key={h.haltestelle}
-                    className="bg-bg-secondary rounded-lg p-6 border border-border-subtle"
+                    className="flex items-center gap-4 px-5 py-4 bg-bg-primary flex-wrap"
                   >
-                    <div className="flex items-start justify-between gap-4 mb-2">
-                      <p className="font-medium text-text-primary">{h.haltestelle}</p>
-                      <span className="text-xs text-brand bg-brand-light px-2.5 py-1 rounded-md shrink-0">
+                    <div className="flex items-center justify-between gap-4 w-full">
+                      <p className="font-medium text-text-primary text-sm">{h.haltestelle}</p>
+                      <span className="text-xs text-brand bg-brand-light px-2.5 py-1 rounded shrink-0">
                         {h.entfernung}
                       </span>
                     </div>
-                    <p className="text-sm text-text-secondary">{h.linien}</p>
+                    <p className="text-sm text-text-secondary w-full">{h.linien}</p>
                   </div>
                 ))}
               </div>
-              <p className="text-sm text-text-muted mt-4">
-                Den persönlichen Fahrplan finden Sie über die elektronische
-                Fahrplanauskunft der ÜSTRA.
+              <p className="text-sm text-text-muted mt-3">
+                Fahrplanauskunft: ÜSTRA Hannoversche Verkehrsbetriebe
               </p>
             </div>
 
             <div>
-              <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-6">
+              <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-5">
                 Mit dem Auto
               </p>
-              <div className="bg-bg-secondary rounded-lg p-6 border border-border-subtle">
-                <p className="text-sm text-text-secondary leading-relaxed mb-4">
-                  Nutzen Sie Ihr bevorzugtes Navigationsgerät. Die Praxis
-                  verfügt über eigene Parkplätze direkt hinter dem Gebäude.
-                </p>
-                <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
+              <div className="border border-border-subtle rounded-lg overflow-hidden">
+                <div className="px-5 py-4 bg-bg-primary">
+                  <p className="text-sm text-text-secondary leading-relaxed">
+                    Die Praxis verfügt über eigene Parkplätze direkt hinter dem Gebäude.
+                  </p>
+                </div>
+                <div className="px-5 py-3 bg-amber-50 border-t border-amber-200">
                   <p className="text-xs text-amber-800 leading-relaxed">
-                    Hinweis: Die Parkplätze werden am besten von Süden her
-                    angefahren. Zieladresse für die Einfahrt: Ricklinger
-                    Straße 7. Aktuell finden dort noch Bauarbeiten statt —
-                    die Einfahrt ist daher schlecht einsehbar.
+                    Die Parkplätze werden am besten von Süden angefahren — Einfahrt über
+                    Ricklinger Straße 7. Aktuell laufen Bauarbeiten, die Einfahrt ist
+                    schlecht einsehbar.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-bg-dark rounded-xl p-7 text-white">
+          <div className="space-y-5">
+            <div className="bg-bg-dark rounded-lg p-6 text-white">
               <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-white/65 mb-5">
                 Praxisadresse
               </p>
-              <address className="not-italic font-display text-xl text-white leading-snug mb-4">
+              <address className="not-italic font-display text-xl text-white leading-snug mb-1">
                 Ricklinger Straße 5B<br />
                 30449 Hannover
               </address>
-              <p className="text-xs text-white/60 mb-6">Stadtteil Linden</p>
+              <p className="text-xs text-white/55 mb-6">Hannover-Linden</p>
               <a
-                href="https://maps.google.com/?q=Ricklinger+Stra%C3%9Fe+5B+30449+Hannover"
+                href="https://www.openstreetmap.org/?mlat=52.3614&mlon=9.7095#map=17/52.3614/9.7095"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-white text-text-primary text-sm px-5 py-2.5 rounded-md hover:bg-white/90 transition-colors font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-dark"
+                className="inline-flex items-center bg-white text-text-primary text-sm px-4 py-2 rounded hover:bg-white/90 transition-colors font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-dark"
               >
-                In Google Maps öffnen
+                In Karte öffnen
               </a>
             </div>
 
-            <div className="bg-bg-secondary rounded-xl p-6 border border-border-subtle">
-              <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-4">
+            <div className="border border-border-subtle rounded-lg px-5 py-4">
+              <p className="text-xs font-medium tracking-[0.12em] uppercase text-brand mb-3">
                 Telefon
               </p>
               <a

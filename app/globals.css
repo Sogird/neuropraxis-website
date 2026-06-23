@@ -5,32 +5,33 @@
   --font-display: var(--font-dm-serif), ui-serif, serif;
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui;
 
-  /* Brand: forest green */
-  --color-brand: oklch(0.40 0.12 152);
-  --color-brand-hover: oklch(0.35 0.12 152);
-  --color-brand-active: oklch(0.30 0.12 152);
-  --color-brand-light: oklch(0.94 0.03 152);
-  --color-brand-dark: oklch(0.26 0.09 152);
+  /* Brand: clinical teal-green */
+  --color-brand: oklch(0.38 0.10 168);
+  --color-brand-hover: oklch(0.32 0.10 168);
+  --color-brand-active: oklch(0.27 0.10 168);
+  --color-brand-light: oklch(0.95 0.025 168);
+  --color-brand-dark: oklch(0.22 0.07 175);
 
-  /* Backgrounds */
-  --color-bg-primary: oklch(0.99 0.003 152);
-  --color-bg-secondary: oklch(0.97 0.005 152);
-  --color-bg-tertiary: oklch(0.93 0.007 152);
-  --color-bg-dark: oklch(0.24 0.08 152);
+  /* Backgrounds: near-neutral, minimal tint */
+  --color-bg-primary: oklch(1.00 0.000 0);
+  --color-bg-secondary: oklch(0.97 0.002 168);
+  --color-bg-tertiary: oklch(0.93 0.004 168);
+  --color-bg-dark: oklch(0.22 0.07 175);
 
   /* Text */
-  --color-text-primary: oklch(0.15 0.015 152);
-  --color-text-secondary: oklch(0.46 0.015 152);
-  --color-text-muted: oklch(0.50 0.012 152);
+  --color-text-primary: oklch(0.14 0.012 168);
+  --color-text-secondary: oklch(0.44 0.012 168);
+  --color-text-muted: oklch(0.50 0.010 168);
 
-  /* Borders */
-  --color-border-subtle: oklch(0.91 0.005 152);
-  --color-border-strong: oklch(0.80 0.010 152);
+  /* Borders: slightly more defined */
+  --color-border-subtle: oklch(0.89 0.005 168);
+  --color-border-strong: oklch(0.78 0.009 168);
 
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 20px;
+  /* Sharper radii for clinical feel */
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
 }
 
 @media (prefers-reduced-motion: reduce) {
