@@ -32,7 +32,7 @@ export default function AnfahrtPage() {
         <div className="relative overflow-hidden rounded-lg border border-border-subtle h-72 md:h-[420px]">
           <iframe
             title="Standort Neuropraxis an der Ihme"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=9.695%2C52.357%2C9.722%2C52.366&layer=mapnik&marker=52.3614%2C9.7095"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=9.688%2C52.357%2C9.716%2C52.375&layer=mapnik&marker=52.3665%2C9.7028"
             className="w-full h-full border-0"
             loading="lazy"
           />
@@ -40,7 +40,7 @@ export default function AnfahrtPage() {
         <p className="text-xs text-text-muted mt-2 text-right">
           Karte:{" "}
           <a
-            href="https://www.openstreetmap.org/?mlat=52.3614&mlon=9.7095#map=16/52.3614/9.7095"
+            href="https://www.openstreetmap.org/?mlat=52.3665&mlon=9.7028#map=17/52.3665/9.7028"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-text-secondary transition-colors"
