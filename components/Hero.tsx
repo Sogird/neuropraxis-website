@@ -51,28 +51,26 @@ export default function Hero() {
       </div>
 
       <div className="bg-bg-dark rounded-xl p-8 text-white">
-        <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-white/40 mb-7">
+        <p className="text-[10px] font-medium tracking-[0.14em] uppercase text-white/65 mb-7">
           So finden Sie uns
         </p>
 
         <div className="space-y-6">
           <div>
-            <p className="text-xs text-white/50 mb-2">Adresse</p>
-            <p className="font-display text-xl leading-snug">
-              Ricklinger Straße 5B
-            </p>
-            <p className="font-display text-xl leading-snug">
+            <p className="text-xs text-white/70 mb-2">Adresse</p>
+            <address className="not-italic font-display text-xl leading-snug text-white">
+              Ricklinger Straße 5B<br />
               30449 Hannover
-            </p>
+            </address>
           </div>
 
           <div className="w-10 h-px bg-white/15" />
 
           <div>
-            <p className="text-xs text-white/50 mb-2">Telefon</p>
+            <p className="text-xs text-white/70 mb-2">Telefon</p>
             <a
               href="tel:051184300090"
-              className="font-display text-xl hover:text-white/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded-sm"
+              className="font-display text-xl hover:text-white/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-sm"
             >
               0511 8430090
             </a>
@@ -81,17 +79,11 @@ export default function Hero() {
           <div className="w-10 h-px bg-white/15" />
 
           <div>
-            <p className="text-xs text-white/50 mb-2">Stadtteil</p>
-            <p className="text-base text-white">Hannover-Linden</p>
-          </div>
-
-          <div className="w-10 h-px bg-white/15" />
-
-          <div>
-            <p className="text-xs text-white/50 mb-2">Sprechzeiten</p>
-            <p className="text-sm text-white/80 leading-relaxed">
-              Montag bis Freitag.<br />
-              Termine nach Vereinbarung.
+            <p className="text-xs text-white/70 mb-2">Sprechzeiten</p>
+            <p className="text-sm text-white/90 leading-relaxed">
+              Mo–Fr 8:00–13:00 Uhr<br />
+              Mo/Di/Do 14:00–17:00 Uhr<br />
+              <span className="text-white/65 text-xs mt-1 block">Termine nach Vereinbarung</span>
             </p>
           </div>
         </div>

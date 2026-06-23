@@ -43,7 +43,7 @@ export default function Services() {
             <p className="text-sm text-text-secondary leading-relaxed">
               Psychische Gesundheit braucht Raum und Zeit. Wir bieten
               umfassende Unterstützung bei Depressionen, Angsterkrankungen und
-              weiteren psychischen Erkrankungen — ganzheitlich und persönlich.
+              weiteren psychischen Erkrankungen. Ganzheitlich und persönlich.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function Services() {
             <p className="text-sm text-text-secondary leading-relaxed">
               Aktuelle Diagnostikverfahren und eine individuelle
               Therapieplanung. Wir setzen auf evidenzbasierte Medizin und
-              klare Kommunikation — von der ersten Untersuchung bis zur
+              klare Kommunikation. Von der ersten Untersuchung bis zur
               Nachsorge.
             </p>
           </div>

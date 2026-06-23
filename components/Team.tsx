@@ -31,7 +31,7 @@ const doctors = [
   },
   {
     initials: "TS",
-    name: "Fr. T. Saul",
+    name: "T. Saul",
     specialty: "Psychiatrie & Psychotherapie",
   },
 ]
@@ -46,7 +46,7 @@ export default function Team() {
               Unser Team
             </p>
             <h2 className="font-display text-3xl text-text-primary mb-5">
-              Sieben Fachärzte für Ihre Gesundheit
+              Sieben Fachärztinnen und Fachärzte für Ihre Gesundheit
             </h2>
             <p className="text-text-secondary leading-relaxed text-sm">
               Unsere neurologisch-psychiatrische Gemeinschaftspraxis vereint
@@ -60,7 +60,7 @@ export default function Team() {
             {doctors.map((doc) => (
               <div
                 key={doc.initials}
-                className="bg-bg-primary p-5 rounded-lg border border-border-subtle hover:border-border-strong transition-colors"
+                className="bg-bg-primary p-5 rounded-lg border border-border-subtle"
               >
                 <div className="w-9 h-9 rounded-full bg-brand-light flex items-center justify-center text-xs font-medium text-brand mb-4">
                   {doc.initials}

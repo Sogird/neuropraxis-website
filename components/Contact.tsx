@@ -8,7 +8,7 @@ export default function Contact() {
               Kontakt & Anfahrt
             </p>
             <h2 className="font-display text-3xl text-white mb-6">
-              Wir freuen uns auf Sie.
+              Wir freuen uns auf Sie
             </h2>
             <p className="text-white/65 leading-relaxed mb-9 max-w-[360px] text-sm">
               Vereinbaren Sie einen Termin telefonisch während unserer
@@ -25,26 +25,24 @@ export default function Contact() {
 
           <div className="space-y-7">
             <div>
-              <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-2">
+              <p className="text-[10px] text-white/65 uppercase tracking-[0.12em] mb-2">
                 Adresse
               </p>
-              <p className="font-display text-xl text-white leading-snug">
-                Ricklinger Straße 5B
-              </p>
-              <p className="font-display text-xl text-white leading-snug">
+              <address className="not-italic font-display text-xl text-white leading-snug">
+                Ricklinger Straße 5B<br />
                 30449 Hannover
-              </p>
+              </address>
             </div>
 
             <div className="w-10 h-px bg-white/15" />
 
             <div>
-              <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-2">
+              <p className="text-[10px] text-white/65 uppercase tracking-[0.12em] mb-2">
                 Telefon
               </p>
               <a
                 href="tel:051184300090"
-                className="text-white text-lg hover:text-white/75 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded-sm"
+                className="text-white text-lg hover:text-white/75 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-sm"
               >
                 0511 8430090
               </a>
@@ -53,22 +51,23 @@ export default function Contact() {
             <div className="w-10 h-px bg-white/15" />
 
             <div>
-              <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-2">
+              <p className="text-[10px] text-white/65 uppercase tracking-[0.12em] mb-2">
                 Sprechzeiten
               </p>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Montag bis Freitag.<br />
-                Termine nach Vereinbarung.
+              <p className="text-white/90 text-sm leading-relaxed">
+                Mo–Fr 8:00–13:00 Uhr<br />
+                Mo/Di/Do 14:00–17:00 Uhr<br />
+                <span className="text-white/65 text-xs mt-1 block">Termine nach Vereinbarung</span>
               </p>
             </div>
 
             <div className="w-10 h-px bg-white/15" />
 
             <div>
-              <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-2">
+              <p className="text-[10px] text-white/65 uppercase tracking-[0.12em] mb-2">
                 E-Rezept & E-AU
               </p>
-              <p className="text-white/65 text-sm leading-relaxed">
+              <p className="text-white/80 text-sm leading-relaxed">
                 Verfügbar. Bitte legen Sie beim Besuch
                 Ihre Versichertenkarte vor.
               </p>
